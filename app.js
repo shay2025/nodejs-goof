@@ -6,6 +6,9 @@
 require('./mongoose-db');
 require('./typeorm-db')
 
+var password = process.env.PASSWORD;
+console.log('password: ' + password);
+
 var st = require('st');
 var crypto = require('crypto');
 var express = require('express');
