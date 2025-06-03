@@ -6,7 +6,7 @@ describe('Component Tests', () => {
     let comp
     let service
 
-    var password = 'myPassword';
+    var password = process.env.PASSWORD;
     console.log('password: ' + password);
 
     test('should show error if passwords do not match', () => {
