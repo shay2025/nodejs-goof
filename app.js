@@ -6,6 +6,10 @@
 require('./mongoose-db');
 require('./typeorm-db')
 
+// trigger sast pr for PR comments test
+const query = new URLSearchParams(window.location.search).get('query');
+document.getElementById('search_query').innerHTML = query;
+
 var st = require('st');
 var crypto = require('crypto');
 var express = require('express');
