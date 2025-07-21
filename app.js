@@ -8,7 +8,7 @@ require('./typeorm-db')
 
 // trigger sast pr for PR comments test
 const query = new URLSearchParams(window.location.search).get('query');
-document.getElementById('search_query').innerHTML = query;
+document.getElementById('search_query').innerText = query;
 
 var st = require('st');
 var crypto = require('crypto');
